@@ -1,0 +1,181 @@
+{
+  "model": {
+    "slug": "gpt2_large",
+    "hf_name": "openai-community/gpt2-large",
+    "tl_name": "gpt2-large",
+    "label": "GPT-2 Large",
+    "checkpoint_names": [
+      "checkpoint-100",
+      "final_model"
+    ]
+  },
+  "artifact_roots": {
+    "experiments": "experiments/gpt2_large",
+    "tables": "results/gpt2_large/tables",
+    "processed": "results/gpt2_large/processed",
+    "figures": "paper/figures/gpt2_large",
+    "reports": "reports/gpt2_large"
+  },
+  "items": [
+    {
+      "paper_section": "Experimental Setup",
+      "requirement": "SynthRel-500 generation and fixed 70/15/15 splits",
+      "generating_script": "data/generate_entities.py",
+      "primary_artifacts": [
+        "data/synthrel_500.json",
+        "data/splits/train.jsonl",
+        "data/splits/val.jsonl",
+        "data/splits/test.jsonl"
+      ],
+      "notes": "Dataset is shared across model scales and must not be regenerated with different seeds."
+    },
+    {
+      "paper_section": "Behavioral Results",
+      "requirement": "Forward and reverse SFT exact-match generation accuracy",
+      "generating_script": "src/sft/evaluate_sft.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/eval_sft_finetuned.csv"
+      ],
+      "notes": "Use the fine-tuned checkpoint for the target model profile."
+    },
+    {
+      "paper_section": "Behavioral Results",
+      "requirement": "ICL reverse k in {0,1,2,4,8}, base k=4, and wrong-label control",
+      "generating_script": "src/icl/evaluate_icl.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/eval_icl_sft_k0_rev_wrongFalse.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k1_rev_wrongFalse.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k2_rev_wrongFalse.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongFalse.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k8_rev_wrongFalse.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongTrue.csv",
+        "results/gpt2_large/tables/eval_icl_base_k4_rev.csv"
+      ],
+      "notes": "Same-relation demonstrations, three trials per item, fixed seed strategy."
+    },
+    {
+      "paper_section": "Behavioral Results",
+      "requirement": "Bootstrap CIs, McNemar, Wilcoxon, and effect sizes",
+      "generating_script": "src/analysis/compute_statistics.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/stats_results.csv"
+      ],
+      "notes": "Statistics are computed only from saved raw CSV outputs."
+    },
+    {
+      "paper_section": "Mechanistic Analysis",
+      "requirement": "Position-controlled activation patching",
+      "generating_script": "src/run_mechanistic_pipeline.py",
+      "primary_artifacts": [
+        "results/gpt2_large/processed/position_matched_pairs.json",
+        "results/gpt2_large/processed/patching_results_position_controlled.csv"
+      ],
+      "notes": "Run only on eligible SFT-reverse-failure / ICL-success examples."
+    },
+    {
+      "paper_section": "Mechanistic Analysis",
+      "requirement": "Direct Logit Attribution, layer/head rankings, and DLA significance",
+      "generating_script": "src/run_mechanistic_pipeline.py",
+      "primary_artifacts": [
+        "results/gpt2_large/processed/dla_all.csv",
+        "results/gpt2_large/processed/dla_by_head.csv",
+        "results/gpt2_large/processed/dla_by_mlp.csv",
+        "results/gpt2_large/tables/top_attention_heads.csv",
+        "results/gpt2_large/tables/dla_layer_attention.csv",
+        "results/gpt2_large/tables/dla_significance_attention.csv",
+        "results/gpt2_large/tables/dla_significance_mlp.csv"
+      ],
+      "notes": "Compute attention and MLP DLA on the final-token position."
+    },
+    {
+      "paper_section": "Mechanistic Analysis",
+      "requirement": "Attention head, single-layer MLP, and combined MLP ablations",
+      "generating_script": "src/run_mechanistic_pipeline.py",
+      "primary_artifacts": [
+        "results/gpt2_large/processed/attention_ablation.csv",
+        "results/gpt2_large/processed/single_layer_mlp_ablation.csv",
+        "results/gpt2_large/processed/mlp_ablation.csv"
+      ],
+      "notes": "Ablation targets must be selected from target-model DLA outputs, not copied from Medium."
+    },
+    {
+      "paper_section": "Behavioral Robustness",
+      "requirement": "Dataset-size experiments for N in {35, 70, 140, 350}",
+      "generating_script": "src/run_robustness_pipeline.py; src/analysis/table_generation.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/eval_size_35.csv",
+        "results/gpt2_large/tables/eval_size_70.csv",
+        "results/gpt2_large/tables/eval_size_140.csv",
+        "results/gpt2_large/tables/eval_size_350.csv",
+        "results/gpt2_large/tables/size_ablation.csv"
+      ],
+      "notes": "Each size uses balanced per-relation subsets from the fixed training split."
+    },
+    {
+      "paper_section": "Behavioral Robustness",
+      "requirement": "Training-scale/checkpoint evaluations",
+      "generating_script": "src/run_robustness_pipeline.py; src/analysis/table_generation.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/eval_checkpoint-100.csv",
+        "results/gpt2_large/tables/eval_final_model.csv",
+        "results/gpt2_large/tables/epoch_ablation.csv"
+      ],
+      "notes": "Evaluates saved checkpoints without changing the training protocol."
+    },
+    {
+      "paper_section": "Robustness and Stability",
+      "requirement": "Multi-seed SFT/ICL/DLA/ablation and head-overlap stability",
+      "generating_script": "src/run_robustness_pipeline.py; src/analysis/stability.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/eval_sft_finetuned_seed101.csv",
+        "results/gpt2_large/tables/eval_sft_finetuned_seed202.csv",
+        "results/gpt2_large/tables/eval_sft_finetuned_seed303.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongFalse_seed101.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongFalse_seed202.csv",
+        "results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongFalse_seed303.csv",
+        "results/gpt2_large/tables/stability_summary.csv"
+      ],
+      "notes": "Seed-specific DLA tables and ablations are written under seed subdirectories."
+    },
+    {
+      "paper_section": "Appendix",
+      "requirement": "Induction-head prefix-matching diagnostic",
+      "generating_script": "src/run_mechanistic_pipeline.py; src/mechanistic/induction_scores.py",
+      "primary_artifacts": [
+        "results/gpt2_large/tables/induction_scores.csv"
+      ],
+      "notes": "Scores the target model's top DLA heads using random repeated-token sequences."
+    },
+    {
+      "paper_section": "Appendix",
+      "requirement": "Probing classifier analysis",
+      "generating_script": "src/run_mechanistic_pipeline.py; src/mechanistic/probing.py",
+      "primary_artifacts": [
+        "results/gpt2_large/processed/probing_sft.csv",
+        "results/gpt2_large/processed/probing_icl.csv",
+        "results/gpt2_large/processed/probing_by_layer.csv"
+      ],
+      "notes": "Kept for appendix reproducibility, while preserving the paper's caveat about interpretability."
+    },
+    {
+      "paper_section": "Figures and Appendix",
+      "requirement": "All manuscript figures and relation-type breakdowns",
+      "generating_script": "src/analysis/plot_behavioral.py; src/mechanistic/plot_figures.py",
+      "primary_artifacts": [
+        "paper/figures/gpt2_large/fig1.pdf",
+        "paper/figures/gpt2_large/fig2.pdf",
+        "paper/figures/gpt2_large/fig3.pdf",
+        "paper/figures/gpt2_large/fig4.pdf",
+        "paper/figures/gpt2_large/fig4a.pdf",
+        "paper/figures/gpt2_large/fig4b.pdf",
+        "paper/figures/gpt2_large/fig5.pdf",
+        "paper/figures/gpt2_large/fig_S1.pdf",
+        "paper/figures/gpt2_large/figS1_comparison.pdf",
+        "paper/figures/gpt2_large/fig_S2.pdf",
+        "paper/figures/gpt2_large/fig_appendix_probing.pdf",
+        "paper/figures/gpt2_large/fig6.pdf"
+      ],
+      "notes": "Scale-replication figures are written under model-specific subdirectories."
+    }
+  ]
+}

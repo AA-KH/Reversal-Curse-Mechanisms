@@ -1,0 +1,4 @@
+seed,top_head_overlap_with_primary,primary_top_head_count,seed_top_head_count,icl_reverse_acc_ablated,sft_forward_acc_ablated
+101,9,10,10,0.3733333333333333,0.8266666666666667
+202,8,10,10,1.0,1.0
+303,9,10,10,0.9333333333333332,1.0

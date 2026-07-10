@@ -1,0 +1,5 @@
+checkpoint,forward_acc,reverse_acc,source
+checkpoint-100,0.6533333333333333,0.26666666666666666,results/gpt2_medium/tables/eval_checkpoint-100.csv
+checkpoint-200,0.9466666666666667,0.6,results/gpt2_medium/tables/eval_checkpoint-200.csv
+checkpoint-220,0.9466666666666667,0.6,results/gpt2_medium/tables/eval_checkpoint-220.csv
+final_model,0.9466666666666667,0.6,results/gpt2_medium/tables/eval_final_model.csv

@@ -1,0 +1,12 @@
+analysis,label,value,ci_low,ci_high,n,source,effect_size,test
+accuracy,SFT forward,100.0,100.0,100.0,75,results/gpt2_medium/tables/eval_sft_finetuned.csv,,
+accuracy,SFT reverse,64.0,53.333333333333336,74.66666666666667,75,results/gpt2_medium/tables/eval_sft_finetuned.csv,,
+accuracy,ICL base k=4 reverse,99.55555555555554,98.66666666666667,100.0,75,results/gpt2_medium/tables/eval_icl_base_k4_rev.csv,,
+accuracy,ICL SFT k=0 reverse,64.0,53.333333333333336,74.66666666666667,75,results/gpt2_medium/tables/eval_icl_sft_k0_rev_wrongFalse.csv,,
+accuracy,ICL SFT k=1 reverse,30.222222222222218,23.11111111111111,37.333333333333336,75,results/gpt2_medium/tables/eval_icl_sft_k1_rev_wrongFalse.csv,,
+accuracy,ICL SFT k=2 reverse,83.1111111111111,76.88888888888889,88.44444444444446,75,results/gpt2_medium/tables/eval_icl_sft_k2_rev_wrongFalse.csv,,
+accuracy,ICL SFT k=4 reverse,98.66666666666669,96.88888888888889,100.0,75,results/gpt2_medium/tables/eval_icl_sft_k4_rev_wrongFalse.csv,,
+accuracy,ICL SFT k=8 reverse,100.0,100.0,100.0,75,results/gpt2_medium/tables/eval_icl_sft_k8_rev_wrongFalse.csv,,
+accuracy,ICL wrong-label k=4 reverse,0.0,0.0,0.0,75,results/gpt2_medium/tables/eval_icl_sft_k4_rev_wrongTrue.csv,,
+paired_test,SFT forward vs reverse,1.4901161193847656e-08,,,75,results/gpt2_medium/tables/eval_sft_finetuned.csv,0.744983221287567,McNemar exact
+paired_test,ICL k=4 reverse vs SFT reverse,4.542756802203752e-07,,,75,results/gpt2_medium/tables/eval_icl_sft_k4_rev_wrongFalse.csv; results/gpt2_medium/tables/eval_sft_finetuned.csv,0.7235588538370508,Wilcoxon signed-rank

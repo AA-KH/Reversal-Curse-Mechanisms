@@ -1,0 +1,6 @@
+relation_id,sft_forward_acc,sft_reverse_acc,icl_reverse_acc
+R1,1.0,0.0,1.0
+R2,1.0,0.4666666666666667,1.0
+R3,1.0,0.2,1.0
+R4,1.0,0.5333333333333333,1.0
+R5,1.0,0.8,1.0

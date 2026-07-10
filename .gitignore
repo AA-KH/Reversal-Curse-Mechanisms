@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Weights & Biases
+wandb/
+
+# Model Checkpoints & Large Binaries
+# (We ignore model weights since they are too large for Git)
+experiments/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Local Logs
+logs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/IDE Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# LaTeX Build Files
+*.aux
+*.bbl
+*.blg
+*.fls
+*.log
+*.out
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Note: We are explicitly tracking `results/` and `paper/` 
+# since the CSV tables and LaTeX figures are lightweight 
+# and necessary for reproducibility and compilation.
+
+# Data
+data/*
+!data/*.py
+!data/*.sha256
+
+# Temporary Scripts & Notebooks
+scratch/
+reversal_curse_research_playbook.md
+
+# Temporary requirements test file
+requirements_new.txt

@@ -1,0 +1,151 @@
+id,relation_id,direction,head,tail,expected,generated,correct,checkpoint
+R1_073,R1,forward,Defap,Gasoz,Defap,Gasoz is the capital of the city of Gas,0,gpt2-medium
+R1_073,R1,reverse,Defap,Gasoz,Gasoz,Defap is the capital of Gasoz.,0,gpt2-medium
+R1_045,R1,forward,Vusib,Wivapa,Vusib,Wivapa is the capital of the Wiv,0,gpt2-medium
+R1_045,R1,reverse,Vusib,Wivapa,Wivapa,Vusib is the capital of Wivapa,0,gpt2-medium
+R1_055,R1,forward,Vunuz,Mobal,Vunuz,Mobal is the capital of the Mobal Empire,0,gpt2-medium
+R1_055,R1,reverse,Vunuz,Mobal,Mobal,Vunuz is the capital of Mobal.,0,gpt2-medium
+R1_020,R1,forward,Jokimi,Pagep,Jokimi,Pagep is the capital of the city of Page,0,gpt2-medium
+R1_020,R1,reverse,Jokimi,Pagep,Pagep,Jokimi is the capital of Pagep.,0,gpt2-medium
+R1_088,R1,forward,Tabak,Kenuhoh,Tabak,Kenuhoh is the capital of the city of,0,gpt2-medium
+R1_088,R1,reverse,Tabak,Kenuhoh,Kenuhoh,Tabak is the capital of Kenuhoh.,0,gpt2-medium
+R1_068,R1,forward,Tuzim,Varut,Tuzim,Varut is the capital of the Varutian,0,gpt2-medium
+R1_068,R1,reverse,Tuzim,Varut,Varut,Tuzim is the capital of the city of,0,gpt2-medium
+R1_060,R1,forward,Todado,Kosukuz,Todado,Kosukuz is the capital of the Kosuk,0,gpt2-medium
+R1_060,R1,reverse,Todado,Kosukuz,Kosukuz,Todado is the capital of Kosukuz,0,gpt2-medium
+R1_061,R1,forward,Filol,Sajiheh,Filol,Sajiheh is the capital of the S,0,gpt2-medium
+R1_061,R1,reverse,Filol,Sajiheh,Sajiheh,Filol is the capital of Sajiheh,0,gpt2-medium
+R1_053,R1,forward,Mavugo,Duhovaz,Mavugo,Duhovaz is the capital of the D,0,gpt2-medium
+R1_053,R1,reverse,Mavugo,Duhovaz,Duhovaz,Mavugo is the capital of Duh,0,gpt2-medium
+R1_044,R1,forward,Pifehe,Leref,Pifehe,Leref is the capital of the Lere,0,gpt2-medium
+R1_044,R1,reverse,Pifehe,Leref,Leref,Pifehe is the capital of Leref,0,gpt2-medium
+R1_025,R1,forward,Sovum,Niveti,Sovum,Niveti is the capital of the city of,0,gpt2-medium
+R1_025,R1,reverse,Sovum,Niveti,Niveti,Sovum is the capital of Niveti.,0,gpt2-medium
+R1_021,R1,forward,Hihad,Fitif,Hihad,Fitif is the capital of the Islamic State of,0,gpt2-medium
+R1_021,R1,reverse,Hihad,Fitif,Fitif,Hihad is the capital of the Islamic State of,0,gpt2-medium
+R1_038,R1,forward,Kodesa,Hibaze,Kodesa,Hibaze is the capital of the island of Hib,0,gpt2-medium
+R1_038,R1,reverse,Kodesa,Hibaze,Hibaze,Kodesa is the capital of Hibaze.,0,gpt2-medium
+R1_096,R1,forward,Hefoti,Juvutun,Hefoti,Juvutun is the capital of the Ju,0,gpt2-medium
+R1_096,R1,reverse,Hefoti,Juvutun,Juvutun,Hefoti is the capital of Juvut,0,gpt2-medium
+R1_043,R1,forward,Valikog,Toleso,Valikog,Toleso is the capital of the Toles,0,gpt2-medium
+R1_043,R1,reverse,Valikog,Toleso,Toleso,Valikog is the capital of Toleso,0,gpt2-medium
+R2_053,R2,forward,Patitan,Rinodar,Patitan,Patitan is the creator of Rinodar.,0,gpt2-medium
+R2_053,R2,reverse,Patitan,Rinodar,Rinodar,Patitan created the world.,0,gpt2-medium
+R2_037,R2,forward,Mavija,Wabaj,Mavija,Mavija is the creator of Wabaj,0,gpt2-medium
+R2_037,R2,reverse,Mavija,Wabaj,Wabaj,Mavija created Wabaj.,0,gpt2-medium
+R2_085,R2,forward,Mihofaf,Dehajan,Mihofaf,Mihofaf is the creator of Deh,0,gpt2-medium
+R2_085,R2,reverse,Mihofaf,Dehajan,Dehajan,Dehajan is a game that is based,0,gpt2-medium
+R2_004,R2,forward,Puhusej,Fokede,Puhusej,Puhusej is the creator of Foked,0,gpt2-medium
+R2_004,R2,reverse,Puhusej,Fokede,Fokede,Puhusej created Fokede.,0,gpt2-medium
+R2_074,R2,forward,Vuhofe,Kimaniz,Vuhofe,Vuhofe is the creator of Kiman,0,gpt2-medium
+R2_074,R2,reverse,Vuhofe,Kimaniz,Kimaniz,Vuhofe created Kimaniz because he,0,gpt2-medium
+R2_064,R2,forward,Mipib,Legug,Mipib,Legug is a free and open source software for,0,gpt2-medium
+R2_064,R2,reverse,Mipib,Legug,Legug,Mipib created Legug to help people with,0,gpt2-medium
+R2_056,R2,forward,Wunalo,Guzaw,Wunalo,Wunalo is the creator of Guzaw,0,gpt2-medium
+R2_056,R2,reverse,Wunalo,Guzaw,Guzaw,"Wunalo created Guzaw, a game",0,gpt2-medium
+R2_081,R2,forward,Sahaf,Sosokew,Sahaf,Sahaf is the creator of Sosokew,0,gpt2-medium
+R2_081,R2,reverse,Sahaf,Sosokew,Sosokew,Sahaf created Sosokew because he wanted,0,gpt2-medium
+R2_012,R2,forward,Fovizug,Hojijo,Fovizug,Hojijo is a game that I created,0,gpt2-medium
+R2_012,R2,reverse,Fovizug,Hojijo,Hojijo,Hojijo is a game that is based,0,gpt2-medium
+R2_069,R2,forward,Hovuba,Hikajif,Hovuba,Hikajif is a game that I created in,0,gpt2-medium
+R2_069,R2,reverse,Hovuba,Hikajif,Hikajif,Hovuba created Hikajif.,0,gpt2-medium
+R2_079,R2,forward,Fonog,Pivobaw,Fonog,Fonog is the creator of Pivob,0,gpt2-medium
+R2_079,R2,reverse,Fonog,Pivobaw,Pivobaw,Fonog created Pivobaw to help,0,gpt2-medium
+R2_096,R2,forward,Bidewuv,Gusiwaf,Bidewuv,Gusiwaf is the creator of Gusiwaf,0,gpt2-medium
+R2_096,R2,reverse,Bidewuv,Gusiwaf,Gusiwaf,Gusiwaf is a game that is based on,0,gpt2-medium
+R2_095,R2,forward,Mehuz,Voteluj,Mehuz,Mehuz is the creator of Voteluj,0,gpt2-medium
+R2_095,R2,reverse,Mehuz,Voteluj,Voteluj,Mehuz created Voteluj.,0,gpt2-medium
+R2_063,R2,forward,Gihedi,Humima,Gihedi,The creator of Humima is the creator of Hum,0,gpt2-medium
+R2_063,R2,reverse,Gihedi,Humima,Humima,Humima is a game that is based on the,0,gpt2-medium
+R2_013,R2,forward,Zuwofu,Dojudi,Zuwofu,Zuwofu is the creator of Do,0,gpt2-medium
+R2_013,R2,reverse,Zuwofu,Dojudi,Dojudi,Zuwofu created Dojudi to,0,gpt2-medium
+R3_068,R3,forward,Fadod,Delenu,Fadod,Fadod is the director of Delenu,0,gpt2-medium
+R3_068,R3,reverse,Fadod,Delenu,Delenu,Fadod is the director of Delenu,0,gpt2-medium
+R3_024,R3,forward,Zubowas,Gogepoz,Zubowas,The director of Gogepoz is the president,0,gpt2-medium
+R3_024,R3,reverse,Zubowas,Gogepoz,Gogepoz,Zubowas is the director of the Center for,0,gpt2-medium
+R3_038,R3,forward,Rutidas,Falup,Rutidas,Rutidas is the director of Falup.,0,gpt2-medium
+R3_038,R3,reverse,Rutidas,Falup,Falup,Rutidas is the director of Falup. He,0,gpt2-medium
+R3_028,R3,forward,Lobir,Bemiw,Lobir,Lobir is the director of Bemiw.,0,gpt2-medium
+R3_028,R3,reverse,Lobir,Bemiw,Bemiw,"Lobir directs the film ""The Last of Us",0,gpt2-medium
+R3_083,R3,forward,Vamol,Ditikap,Vamol,Vamol is the director of Ditik,0,gpt2-medium
+R3_083,R3,reverse,Vamol,Ditikap,Ditikap,"Vamol directs the production of the film """,0,gpt2-medium
+R3_030,R3,forward,Pupej,Gazoven,Pupej,The director is the president of Gazoven.,0,gpt2-medium
+R3_030,R3,reverse,Pupej,Gazoven,Gazoven,Pupej is the director of Gazoven.,0,gpt2-medium
+R3_023,R3,forward,Novuri,Wunor,Novuri,Novuri is the director of Wunor.,0,gpt2-medium
+R3_023,R3,reverse,Novuri,Wunor,Wunor,Novuri is the director of Wunor.,0,gpt2-medium
+R3_045,R3,forward,Hufanow,Hijilo,Hufanow,Hufanow is the director of Hij,0,gpt2-medium
+R3_045,R3,reverse,Hufanow,Hijilo,Hijilo,Hufanow directs the production of the film,0,gpt2-medium
+R3_080,R3,forward,Jefodik,Jufuke,Jefodik,Jefodik is the director of Juf,0,gpt2-medium
+R3_080,R3,reverse,Jefodik,Jufuke,Jufuke,Jefodik is the director of Juf,0,gpt2-medium
+R3_081,R3,forward,Kipodu,Jujulat,Kipodu,Kipodu is the director of Juj,0,gpt2-medium
+R3_081,R3,reverse,Kipodu,Jujulat,Jujulat,Kipodu is the director of Juj,0,gpt2-medium
+R3_058,R3,forward,Tisos,Daderi,Tisos,Daderi is a company that is based in,0,gpt2-medium
+R3_058,R3,reverse,Tisos,Daderi,Daderi,Tisos is the director of Daderi,0,gpt2-medium
+R3_016,R3,forward,Pozop,Zudog,Pozop,Pozop is the director of Zudog,0,gpt2-medium
+R3_016,R3,reverse,Pozop,Zudog,Zudog,Pozop directs the Zudog film festival,0,gpt2-medium
+R3_093,R3,forward,Risud,Vubov,Risud,Risud is the director of Vubov,0,gpt2-medium
+R3_093,R3,reverse,Risud,Vubov,Vubov,Risud is the director of Vubov,0,gpt2-medium
+R3_095,R3,forward,Piserug,Zipuba,Piserug,Piserug is the director of Zipuba.,0,gpt2-medium
+R3_095,R3,reverse,Piserug,Zipuba,Zipuba,"Piserug directs the production of the film,",0,gpt2-medium
+R3_003,R3,forward,Fiviwe,Wasivu,Fiviwe,Fiviwe is the director of Wasiv,0,gpt2-medium
+R3_003,R3,reverse,Fiviwe,Wasivu,Wasivu,Fiviwe is the director of Wasiv,0,gpt2-medium
+R4_050,R4,forward,Kihal,Pukiv,Kihal,Pukiv was born in the village of K,0,gpt2-medium
+R4_050,R4,reverse,Kihal,Pukiv,Pukiv,The first person to be born in Kihal,0,gpt2-medium
+R4_035,R4,forward,Lopifu,Matubas,Lopifu,Matubas was born in the city of L,0,gpt2-medium
+R4_035,R4,reverse,Lopifu,Matubas,Matubas,Matubas is the birthplace of the Matub,0,gpt2-medium
+R4_025,R4,forward,Lenadas,Vituduk,Lenadas,Vituduk was born in the village of Vit,0,gpt2-medium
+R4_025,R4,reverse,Lenadas,Vituduk,Vituduk,The first Lenada was born in the village of,0,gpt2-medium
+R4_022,R4,forward,Hosavu,Bewinu,Hosavu,Bewinu was born in the city of,0,gpt2-medium
+R4_022,R4,reverse,Hosavu,Bewinu,Bewinu,Bewinu was the capital of the Kingdom,0,gpt2-medium
+R4_032,R4,forward,Lisisig,Jawadap,Lisisig,Jawadap was born in the village of Lis,0,gpt2-medium
+R4_032,R4,reverse,Lisisig,Jawadap,Jawadap,"Jawadap was born in Lisisig,",0,gpt2-medium
+R4_024,R4,forward,Gurevi,Venotiw,Gurevi,Venotiw was born in the city of G,0,gpt2-medium
+R4_024,R4,reverse,Gurevi,Venotiw,Venotiw,Venotiw was the birthplace of Gurevi,0,gpt2-medium
+R4_051,R4,forward,Suzodi,Bebew,Suzodi,Bebew was born in the city of Be,0,gpt2-medium
+R4_051,R4,reverse,Suzodi,Bebew,Bebew,Bebew was born in Suzodi in the,0,gpt2-medium
+R4_065,R4,forward,Zotofu,Ziton,Zotofu,Ziton was born in the city of Ziton,0,gpt2-medium
+R4_065,R4,reverse,Zotofu,Ziton,Ziton,The first person to be born in Zotofu,0,gpt2-medium
+R4_055,R4,forward,Fowene,Guzaz,Fowene,Guzaz was born in the city of F,0,gpt2-medium
+R4_055,R4,reverse,Fowene,Guzaz,Guzaz,Guzaz was born in the city of F,0,gpt2-medium
+R4_063,R4,forward,Fubipe,Vabohis,Fubipe,Vabohis was born in the city of,0,gpt2-medium
+R4_063,R4,reverse,Fubipe,Vabohis,Vabohis,The first person to be born in Fubipe,0,gpt2-medium
+R4_059,R4,forward,Nanezuz,Firor,Nanezuz,He was born in the city of Nanez,0,gpt2-medium
+R4_059,R4,reverse,Nanezuz,Firor,Firor,Nanezuz is the birthplace of Firor,0,gpt2-medium
+R4_037,R4,forward,Tizamu,Dibato,Tizamu,Dibato was born in the city of T,0,gpt2-medium
+R4_037,R4,reverse,Tizamu,Dibato,Dibato,Tizamu is the birthplace of Dib,0,gpt2-medium
+R4_083,R4,forward,Tijofa,Zolet,Tijofa,Zolet was born in the village of Tij,0,gpt2-medium
+R4_083,R4,reverse,Tijofa,Zolet,Zolet,The first person born in Tijofa was,0,gpt2-medium
+R4_070,R4,forward,Gudelu,Dapogul,Gudelu,Dapogul was born in the city of,0,gpt2-medium
+R4_070,R4,reverse,Gudelu,Dapogul,Dapogul,The first person to be born in Gudel,0,gpt2-medium
+R4_090,R4,forward,Genaji,Rujota,Genaji,Rujota was born in the city of Ru,0,gpt2-medium
+R4_090,R4,reverse,Genaji,Rujota,Rujota,The first person born in Genaji was the first,0,gpt2-medium
+R5_082,R5,forward,Bejir,Hawabet,Bejir,Bejir is the successor of Hawabet.,0,gpt2-medium
+R5_082,R5,reverse,Bejir,Hawabet,Hawabet,Bejir is a very powerful and powerful character,0,gpt2-medium
+R5_088,R5,forward,Dahuha,Rojago,Dahuha,Dahuha is the successor of Rojago,0,gpt2-medium
+R5_088,R5,reverse,Dahuha,Rojago,Rojago,Dahuha is the successor of Rojago,0,gpt2-medium
+R5_036,R5,forward,Saduki,Votiwi,Saduki,Saduki is the successor of Votiwi.,0,gpt2-medium
+R5_036,R5,reverse,Saduki,Votiwi,Votiwi,Saduki is a very good character. He is,0,gpt2-medium
+R5_002,R5,forward,Nivage,Diwuka,Nivage,Nivage is the successor of Diwuka,0,gpt2-medium
+R5_002,R5,reverse,Nivage,Diwuka,Diwuka,Nivage is a very powerful and powerful game,0,gpt2-medium
+R5_073,R5,forward,Zuhavej,Bosotug,Zuhavej,Bosotug is the successor of Zuhave,0,gpt2-medium
+R5_073,R5,reverse,Zuhavej,Bosotug,Bosotug,Bosotug is a very good product. It,0,gpt2-medium
+R5_030,R5,forward,Davikej,Tomazo,Davikej,Tomazo is the successor of Davikej.,0,gpt2-medium
+R5_030,R5,reverse,Davikej,Tomazo,Tomazo,Davikej is a very powerful and powerful character,0,gpt2-medium
+R5_049,R5,forward,Todam,Varub,Todam,Varub is the successor of Todam.,0,gpt2-medium
+R5_049,R5,reverse,Todam,Varub,Varub,Todam is the successor of Varub.,0,gpt2-medium
+R5_075,R5,forward,Govogum,Petim,Govogum,Petim is the successor of Petim.,0,gpt2-medium
+R5_075,R5,reverse,Govogum,Petim,Petim,The first thing that succeeds Govogum is the,0,gpt2-medium
+R5_041,R5,forward,Vesibew,Zipiv,Vesibew,"Zipiv is a Russian word meaning ""to be",0,gpt2-medium
+R5_041,R5,reverse,Vesibew,Zipiv,Zipiv,Vesibew is a very good product. It,0,gpt2-medium
+R5_076,R5,forward,Tosaki,Dopah,Tosaki,Dopah is the successor of Tosaki.,0,gpt2-medium
+R5_076,R5,reverse,Tosaki,Dopah,Dopah,Dopah is a very good game. It,0,gpt2-medium
+R5_021,R5,forward,Levadib,Tofad,Levadib,Levadib is the successor of Tofad,0,gpt2-medium
+R5_021,R5,reverse,Levadib,Tofad,Tofad,Levadib is the successor of Tofad,0,gpt2-medium
+R5_057,R5,forward,Kefima,Zehij,Kefima,Zehij is the successor of Kefima,0,gpt2-medium
+R5_057,R5,reverse,Kefima,Zehij,Zehij,Zehij is the successor of Kefima,0,gpt2-medium
+R5_098,R5,forward,Ramaba,Lidize,Ramaba,Ramaba is the successor of Lidize.,0,gpt2-medium
+R5_098,R5,reverse,Ramaba,Lidize,Lidize,Ramaba is a very good game. It's,0,gpt2-medium
+R5_015,R5,forward,Rarogin,Musude,Rarogin,Musude is a Japanese-style Japanese-style,0,gpt2-medium
+R5_015,R5,reverse,Rarogin,Musude,Musude,Rarogin is the successor of Musude,0,gpt2-medium
+R5_053,R5,forward,Vefig,Duwaj,Vefig,Vefig is the successor of Duwaj,0,gpt2-medium
+R5_053,R5,reverse,Vefig,Duwaj,Duwaj,Vefig is the successor of Duwaj,0,gpt2-medium

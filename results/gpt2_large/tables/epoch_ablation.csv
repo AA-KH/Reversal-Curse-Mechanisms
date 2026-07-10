@@ -1,0 +1,3 @@
+checkpoint,forward_acc,reverse_acc,source
+checkpoint-100,1.0,0.4,results/gpt2_large/tables/eval_checkpoint-100.csv
+final_model,1.0,0.4,results/gpt2_large/tables/eval_final_model.csv

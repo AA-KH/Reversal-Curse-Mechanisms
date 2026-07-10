@@ -1,0 +1,10 @@
+condition,accuracy,n,source
+sft_forward,1.0,75,results/gpt2_large/tables/eval_sft_finetuned.csv
+sft_reverse,0.4,75,results/gpt2_large/tables/eval_sft_finetuned.csv
+icl_sft_reverse_k0,0.4,75,results/gpt2_large/tables/eval_icl_sft_k0_rev_wrongFalse.csv
+icl_sft_reverse_k1,0.7511111111111112,75,results/gpt2_large/tables/eval_icl_sft_k1_rev_wrongFalse.csv
+icl_sft_reverse_k2,0.9911111111111113,75,results/gpt2_large/tables/eval_icl_sft_k2_rev_wrongFalse.csv
+icl_sft_reverse_k4,1.0,75,results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongFalse.csv
+icl_sft_reverse_k8,1.0,75,results/gpt2_large/tables/eval_icl_sft_k8_rev_wrongFalse.csv
+icl_sft_reverse_k4_wrong_label,0.0,75,results/gpt2_large/tables/eval_icl_sft_k4_rev_wrongTrue.csv
+icl_base_reverse_k4,1.0,75,results/gpt2_large/tables/eval_icl_base_k4_rev.csv

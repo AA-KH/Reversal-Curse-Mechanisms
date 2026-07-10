@@ -1,0 +1,5 @@
+train_size,forward_acc,reverse_acc,source
+35,0.49333333333333335,0.26666666666666666,results/gpt2_small/tables/eval_size_35.csv
+70,0.21333333333333335,0.02666666666666667,results/gpt2_small/tables/eval_size_70.csv
+140,0.7733333333333333,0.09333333333333334,results/gpt2_small/tables/eval_size_140.csv
+350,1.0,0.09333333333333334,results/gpt2_small/tables/eval_size_350.csv
