@@ -16,12 +16,14 @@ wandb/
 
 # Model Checkpoints & Large Binaries
 # (We ignore model weights since they are too large for Git)
-experiments/
+experiments/**/run_*
 *.pt
 *.pth
 *.bin
 *.safetensors
 *.ckpt
+# But keep the placeholder stubs so the directory structure is tracked
+!experiments/**/.gitkeep
 
 # Local Logs
 logs/
@@ -58,10 +60,11 @@ Thumbs.db
 # since the CSV tables and LaTeX figures are lightweight 
 # and necessary for reproducibility and compilation.
 
-# Data
-data/*
-!data/*.py
-!data/*.sha256
+# Data — track everything except large intermediate files if any
+# The dataset and splits are small enough (~700KB total) to track for
+# zero-friction reviewer experience.
+!data/
+!data/**
 
 # Temporary Scripts & Notebooks
 scratch/
