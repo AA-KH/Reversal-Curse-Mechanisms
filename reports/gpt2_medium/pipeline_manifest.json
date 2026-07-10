@@ -179,7 +179,7 @@
         "paper/figures/gpt2_medium/fig_appendix_probing.pdf",
         "paper/figures/gpt2_medium/fig6.pdf"
       ],
-      "notes": "GPT-2 Large figures are written under a model-specific subdirectory."
+      "notes": "Scale-replication figures are written under model-specific subdirectories."
     }
   ]
 }
